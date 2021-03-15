@@ -5,7 +5,7 @@ import (
 	"log"
 	// "fmt"
 	// "context"
-	"github.com/io-m/lenses"
+	"github.com/io-m/lenses/conn"
 
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
@@ -70,7 +70,7 @@ var(
 	MongoDB = &mongo.Database{}
 	// Collection is mongo db collection instance
 	Collection = &mongo.Collection{}
-	mongoconn = lenses.Mongoconn
+	mongoconn = conn.Mongoconn
 )
 
 
